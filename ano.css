@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #efeefe;
+}
+
+.navbar {
+    background-color: #46379e;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.navigation {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation h1 {
+    font-size: 46px;
+    margin-right: 100px;
+    color: white;
+}
+
+.navigation p {
+    color: white;
+}
+
+.navcontent {
+    display: flex;
+    align-items: center;
+}
+
+.navcontent ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navcontent ul li {
+    position: relative;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.n1 {
+    position: relative;
+    opacity: 0;
+    animation: navListFadeIn 5s ease-out forwards;
+}
+
+@keyframes navListFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
+
+.n2 {
+    position: relative;
+    opacity: 0;
+    animation: navListFadeIn 5.2s ease-out forwards;
+}
+
+@keyframes navListFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
+
+.n3 {
+    position: relative;
+    opacity: 0;
+    animation: navListFadeIn 5.4s ease-out forwards;
+}
+
+@keyframes navListFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
+
+.n4 {
+    position: relative;
+    opacity: 0;
+    animation: navListFadeIn 5.6s ease-out forwards;
+}
+
+@keyframes navListFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
+
+.n5 {
+    position: relative;
+    opacity: 0;
+    animation: navListFadeIn 5.8s ease-out forwards;
+}
+
+@keyframes navListFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
+
+.navcontent ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    position: relative; 
+}
+
+.navcontent ul li i {
+    color: #fdd16e;
+    opacity: 0;
+}
+
+.navcontent ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fdd16e;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.navcontent a:hover::before {
+    transform: scaleX(1); 
+}
+
+.navcontent li:hover {
+    font-style: italic;
+    transform: translateY(-3px); 
+}
+
+.pindutin-mo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #fdd16e;
+    color: #000;
+}
+
+/*preloader*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hide-preloader {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.2); 
+    border-top: 5px solid #46379e; 
+    border-radius: 50%;
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Content styles */
+.content {
+    display: none; 
+}
+
+
+
+/*About*/
+
+main {
+    padding: 20px;
+    padding-top: 200px;
+}
+
+main h1{
+    font-size: 40px;
+    text-align: center;
+    color: #46379e;
+    margin-bottom: 150px;
+}
+
+.flex-section-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.flex-section-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.title {
+    flex: 1;
+    font-size: 80px;
+    color: #46379e;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #fdd16e;
+}
+
+.description {
+    flex: 1;
+    font-size: 18px;
+    padding-left: 20px;
+    text-align: justify;
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+/*Chart*/
+
+.popol-chart {
+    text-align: center;
+    margin-bottom: 70px;
+    background-color: #efeefe;
+}
+
+.popol-chart h1 {
+    font-size: 60px;
+    color: #46379e;
+}
+
+.chart {
+    margin: 0 auto;
+    width: 1500px;
+    height: 500px;
+}
+
+/*Demographic*/
+
+.demographic-list {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.demographic-list h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #46379e;
+}
+
+.datas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.despacito {
+    display: flex;
+}
+
+.demographic-data {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.demographic-data:hover {
+    transform: translateY(-10px); 
+}
+
+.demographic-data {
+    text-align: center;
+}
+
+.demographic-data ul {
+    margin-top: 10px;
+    text-align: center;
+    color: #46379e;
+}
+
+.demographic-data ul li {
+    list-style: none;
+}
+
+.demographic-data ul li i{
+    margin-right: 5px;
+}
+
+.democon img{
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+}
+
+/*Last Column*/
+
+.lalagyan {
+    background-color: #46379e;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.last-column {
+    flex: 1;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.last-column:last-child {
+    margin-right: 0; 
+}
+
+.logo-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.pnsllogo {
+    flex: 1;
+    width: 50%;
+    height: auto;
+}
+.lpzlogo{
+    flex: 1;
+    width: 70%;
+    height: auto;
+}
+
+.quick-links {
+    padding: 20px 20px;
+}
+
+.quick-links h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.quick-links li {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.quick-links li a{
+    color: #fdd16e;
+    margin-bottom: 10px;
+}
+
+.bullet-links li {
+    margin-bottom: 5px; 
+}
+
+.bullet-links li::before {
+    content: "\2022"; 
+    margin-right: 10px; 
+    color: #fdd16e; 
+}
+
+.barangay-info {
+    padding: 20px 20px;
+}
+
+.barangay-info h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+}
+
+.info-list li i {
+    margin-right: 10px;
+}
+
+.minimap {
+    padding: 20px 20px;
+}
+
+.minimap h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.minimap img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Paa*/
+
+.paa {
+    background-color: #fdd16e;
+}
+
+.paa h3{
+    text-align: center;
+    padding: 20px;
+}
